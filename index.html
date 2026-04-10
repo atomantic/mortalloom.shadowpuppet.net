@@ -26,9 +26,13 @@
         .pro-section h2 { font-size: 1.3rem; margin-bottom: 0.5rem; color: #fff; }
         .pro-section p { font-size: 0.95rem; }
         .pro-section ul { margin: 0.5rem 0 0 1.2rem; font-size: 0.9rem; }
-        .screenshots { text-align: center; margin: 2rem 0; }
-        .screenshots img { width: 220px; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); margin: 0 0.5rem; }
-        @media (max-width: 600px) { .screenshots img { width: 140px; margin: 0.3rem; } }
+        .screenshots { display: flex; justify-content: center; gap: 1.5rem; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+        .screenshots img { flex: 1; min-width: 0; max-width: 300px; height: auto; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+        @media (max-width: 600px) {
+            .screenshots { justify-content: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 100%; gap: 1rem; }
+            .screenshots::-webkit-scrollbar { display: none; }
+            .screenshots img { flex: 0 0 75%; max-width: none; scroll-snap-align: start; }
+        }
         .disclaimer { background: #252525; border-radius: 12px; padding: 1rem; margin: 2rem 0; font-size: 0.85rem; color: #999; }
         .disclaimer strong { color: #ccc; }
         .links { text-align: center; margin: 2rem 0 1rem; font-size: 0.9rem; }
@@ -48,13 +52,13 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="screenshots">
-            <img src="screenshots/overview.png" alt="MortalLoom Overview - Death clock and life expectancy" />
-            <img src="screenshots/blood.png" alt="MortalLoom Blood Tests - 50+ biomarker reference ranges" />
-            <img src="screenshots/calendar.png" alt="MortalLoom Life Calendar - Visualize your weeks" />
-        </div>
+    <div class="screenshots">
+        <img src="screenshots/overview.png" alt="MortalLoom Overview - Death clock and life expectancy" />
+        <img src="screenshots/blood.png" alt="MortalLoom Blood Tests - 50+ biomarker reference ranges" />
+        <img src="screenshots/calendar.png" alt="MortalLoom Life Calendar - Visualize your weeks" />
+    </div>
 
+    <div class="content">
         <div class="features">
             <h2>Why MortalLoom?</h2>
             <div class="feature-grid">
