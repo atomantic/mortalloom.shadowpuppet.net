@@ -4,15 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#1a1a1a">
-    <title>MortalLoom — Spend Your Time on What Matters</title>
+    <title>MortalLoom — Life Planning &amp; Longevity Tracking for iPhone, iPad &amp; Mac</title>
+    <meta name="description" content="Privacy-first life planning and longevity tracking for iPhone, iPad, and Mac. Name your North Star, build life pillars, set concrete goals, and measure whether your time aligns with what matters. Track blood biomarkers, genome data, Apple Health, and your shot at Longevity Escape Velocity. No accounts, no servers, no tracking.">
+    <meta name="keywords" content="life planning app, longevity tracking app, healthspan app, life goals app, North Star app, life pillars app, biomarker tracking app, blood test tracking, genome analysis app, Apple Health integration, longevity escape velocity, LEV 2045, epigenetic age tracker, biological age app, healthspan optimizer, life purpose app, productivity and longevity, goal alignment app, privacy-first life tracker, Oura alternative, Stoic alternative, Year Compass alternative, Superpower alternative, iPhone longevity app, iPad life planning, Mac goal tracker, ClinVar genome, actuarial life expectancy, weekly review app, habit tracker app">
+    <meta name="author" content="ShadowPuppet, LLC">
 
     <!-- iOS Safari Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6760883701">
-    <meta name="description" content="Privacy-first life planning. Name your North Star, build life pillars, set concrete goals, and measure whether your time actually aligns with what you say matters. Deep longevity tracking protects the runway. No accounts, no servers, no tracking.">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="MortalLoom — Life Planning &amp; Longevity Tracking">
+    <meta property="og:description" content="Name your North Star, build life pillars, and measure whether your time aligns with what matters. Deep longevity tracking — blood biomarkers, genome, Apple Health — protects the runway.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mortalloom.shadowpuppet.net/">
+    <meta property="og:image" content="https://mortalloom.shadowpuppet.net/icon.png">
+    <meta property="og:site_name" content="MortalLoom">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MortalLoom — Spend Your Time on What Matters">
+    <meta name="twitter:description" content="Privacy-first life planning paired with deep longevity tracking. No accounts, no servers, no tracking.">
+    <meta name="twitter:image" content="https://mortalloom.shadowpuppet.net/icon.png">
+    <link rel="canonical" href="https://mortalloom.shadowpuppet.net/">
+
+    <!-- Structured Data — helps Google show rich snippets and classify the page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "MortalLoom",
+      "alternateName": "MortalLoom — Spend Your Time on What Matters",
+      "description": "Privacy-first life planning and longevity tracking for iPhone, iPad, and Mac. Name your North Star, build life pillars, set concrete goals, and measure whether your time aligns with what matters. Track blood biomarkers, genome data, Apple Health, and your shot at Longevity Escape Velocity.",
+      "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "Health & Fitness",
+      "operatingSystem": "iOS 17.0, iPadOS 17.0, macOS 14.0",
+      "url": "https://mortalloom.shadowpuppet.net/",
+      "downloadUrl": "https://apps.apple.com/us/app/mortalloom/id6760883701",
+      "installUrl": "https://apps.apple.com/us/app/mortalloom/id6760883701",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "ShadowPuppet, LLC"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ShadowPuppet, LLC"
+      },
+      "image": "https://mortalloom.shadowpuppet.net/icon.png",
+      "screenshot": "https://mortalloom.shadowpuppet.net/screenshots/overview.png",
+      "featureList": [
+        "North Star lifelong purpose definition",
+        "Life pillars (3-6 areas supporting your North Star)",
+        "Dated, progress-trackable goals with milestones",
+        "Alignment Score — how your time maps to what matters",
+        "Stagnation prompts when pillars go quiet",
+        "Weekly review workflow",
+        "Longevity Clock — actuarial life expectancy adjusted for your data",
+        "50+ blood biomarker tracking with clinical reference ranges",
+        "Genome upload with ClinVar cross-referencing (Pro)",
+        "Epigenetic age tracking (Pro)",
+        "Apple Health integration (steps, HRV, sleep, VO2 max)",
+        "Substance tracking (alcohol, nicotine, sauna) with NIAAA risk levels",
+        "LEV 2045 — Longevity Escape Velocity tracking",
+        "No accounts, no servers, no third-party tracking"
+      ],
+      "keywords": "life planning app, longevity tracking, healthspan, biomarker tracking, genome analysis, Apple Health, North Star, life pillars, LEV, longevity escape velocity, privacy-first life app"
+    }
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #e0e0e0; line-height: 1.6; background: #1a1a1a; }
         .hero { background: linear-gradient(135deg, #1e3a5f 0%, #0d1b2a 100%); color: white; text-align: center; padding: 4rem 1rem 3rem; }
+        .hero .app-icon { width: clamp(88px, 22vw, 120px); height: clamp(88px, 22vw, 120px); border-radius: 26%; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(126, 184, 218, 0.2); margin-bottom: clamp(1rem, 3vw, 1.5rem); }
         .hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1px; }
         .hero .tagline { font-size: 1.3rem; margin-top: 0.5rem; opacity: 0.9; }
         .hero .subtitle { font-size: 1rem; margin-top: 1rem; opacity: 0.7; }
@@ -170,6 +241,7 @@
     </div>
 
     <div class="hero">
+        <img class="app-icon" src="icon.png" alt="MortalLoom app icon">
         <h1>MortalLoom</h1>
         <div class="tagline">Spend your time on what actually matters.</div>
         <div class="subtitle">Name your North Star. Build life pillars. Set concrete goals. Measure whether your days are really moving the needle — and protect the runway with deep longevity tracking.</div>
